@@ -11,7 +11,73 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <!-- <h1>Personal information</h1> -->
     <script type="text/javascript" src="./main.js"></script>
+
+    <fieldset>
+      <legend>Personal information</legend>
+
+      <form
+        action="http://localhost:8080/api"
+        method="POST"
+      >
+        <div class="form-field">
+          <label for="surname">Surname:</label>
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            required
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="old">Hou old are You?</label>
+          <input
+            type="number"
+            name="hou old are you"
+            id="old"
+            value="12"
+            min="12"
+            max="100"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="birn">Full date of birn?</label>
+          <input
+            type="text"
+            name="full date of birn"
+            id="birn"
+            placeholder="mm / dd / yyyy"
+            required
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="term">
+            I accept the term of the argeement:
+          </label>
+          <input
+            type="checkbox"
+            name="term of the argeement"
+            id="term"
+            required
+          >
+        </div>
+      </form>
+    </fieldset>
+
+
   </body>
 </html>
