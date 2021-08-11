@@ -42,7 +42,7 @@
         </div>
 
         <div class="form-field">
-          <label for="old">Hou old are You?</label>
+          <label for="old">How old are You?</label>
           <input
             type="number"
             name="hou old are you"
@@ -54,7 +54,7 @@
         </div>
 
         <div class="form-field">
-          <label for="birn">Full date of birn</label>
+          <label for="birn">Full date of birth:</label>
           <input
             type="date"
             name="full date of birn"
@@ -66,7 +66,7 @@
 
         <div class="form-field">
           <label for="term">
-            I accept the term of the ageement:
+            I accept the term of the agreement
           </label>
           <input
             type="checkbox"
@@ -120,7 +120,7 @@
         onsubmit ="onSubmit()"
       >
         <div class="form-field_1">
-          Do you love cars?
+          Do you love cats?
 
           <input
             type="radio"
@@ -148,7 +148,7 @@
         </div>
 
         <div class="form-field">
-          <label for="time">What time do you go to bad?</label>
+          <label for="time">What time do you go to bed?</label>
           <input
             type="time"
             step="1"
@@ -158,15 +158,13 @@
         </div>
 
         <div class="form-field">
-          What are you favorite brand of cars?
+          What are your favorite brand of cars?
 
-          <textarea
-            name="brand of cars"
-            placeholder="BMW Audi Lada"
-            id="btand"
-            cols="3"
-            rows="4"
-         ></textarea>
+          <select name="cars" multiple>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
         </div>
 
         <div class="form-field">
@@ -175,7 +173,6 @@
           <input
             type="range"
             name="rate of work?"
-            required
           >
         </div>
       </form>
@@ -194,7 +191,7 @@
 
           <textarea
             name="comments"
-            cols="18"
+            cols="20"
             rows="2"
          ></textarea>
         </div>
