@@ -56,7 +56,7 @@
         <div class="form-field">
           <label for="birn">Full date of birn?</label>
           <input
-            type="text"
+            type="date"
             name="full date of birn"
             id="birn"
             placeholder="mm / dd / yyyy"
@@ -104,6 +104,72 @@
             id="password"
             minlength="5"
             maxlength="32"
+            required
+          >
+        </div>
+      </form>
+    </fieldset>
+
+    <fieldset class="field">
+      <legend>An interesting fact about you!</legend>
+
+      <form
+        action="http://localhost:8080/api"
+        method="POST"
+      >
+        <div class="form-field">
+          Do you love cars?
+
+          <input
+            type="radio"
+            name="cars queshion"
+            value="y"
+          >
+          Yes
+
+          <input
+            type="radio"
+            name="cars queshion"
+            value="n"
+          >
+          No
+        </div>
+
+        <div class="form-field">
+          <label for="color">What is your favorite color?</label>
+          <input
+            type="color"
+            name="favorite color"
+            id="color"
+            value="#000000"
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="time">What time do you go to bad?</label>
+          <input
+            type="time"
+            name="time to bad"
+            id="time"
+          >
+        </div>
+
+        <div class="form-field">
+          <textarea
+            name="brand of cars"
+            placeholder="BMW Audi Lada"
+            id="btand"
+            cols="3"
+            rows="4"
+         ></textarea>
+        </div>
+
+        <div class="form-field">
+          How do you rate our work?
+
+          <input
+            type="range"
+            name="rate of work?"
             required
           >
         </div>
