@@ -78,6 +78,38 @@
       </form>
     </fieldset>
 
+    <fieldset class="field">
+      <legend>Registration</legend>
+
+      <form
+        action="http://localhost:8080/api"
+        method="POST"
+      >
+        <div class="form-field">
+          <label for="mail">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            id="mail"
+            placeholder="email@example.com"
+            required
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            minlength="5"
+            maxlength="32"
+            required
+          >
+        </div>
+      </form>
+    </fieldset>
+
 
   </body>
 </html>

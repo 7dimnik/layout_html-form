@@ -1,4 +1,8 @@
 /* styles go here */
+.field {
+  margin-top: 20px;
+}
+
 .form-field {
   padding: 5px;
 }
