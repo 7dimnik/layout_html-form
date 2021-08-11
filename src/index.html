@@ -156,6 +156,7 @@
 
         <div class="form-field">
           What are you favorite brand of cars?
+
           <textarea
             name="brand of cars"
             placeholder="BMW Audi Lada"
@@ -177,6 +178,35 @@
       </form>
     </fieldset>
 
+    <fieldset class="field">
+      <legend>Additional info</legend>
 
+      <form
+        action="http://localhost:8080/api"
+        method="POST"
+        onsubmit ="onSubmit ()"
+      >
+        <div class="form-field">
+          Comments:
+
+          <textarea
+            name="comments"
+            cols="16"
+            rows="2"
+         ></textarea>
+        </div>
+
+        <div class="form-field">
+          Would you recommend us?
+
+          <select name="recomend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </form>
+    </fieldset>
+
+    <button type="submit">Submit</button>
   </body>
 </html>

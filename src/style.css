@@ -6,3 +6,8 @@
 .form-field {
   padding: 5px;
 }
+
+button {
+  margin-top: 20px;
+  margin-left: 4px;
+}
