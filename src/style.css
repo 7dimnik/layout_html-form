@@ -3,6 +3,10 @@
   margin-top: 20px;
 }
 
+div:first-child {
+  padding-top: 0.01px;
+}
+
 .form-field {
   padding-top: 10px;
 }

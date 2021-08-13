@@ -21,7 +21,7 @@
         method="POST"
         onsubmit ="onSubmit()"
       >
-        <div class="form-field_1">
+        <div class="form-field">
           <label for="surname">Surname:</label>
           <input
             type="text"
@@ -86,7 +86,7 @@
         method="POST"
         onsubmit ="onSubmit()"
       >
-        <div class="form-field_1">
+        <div class="form-field">
           <label for="mail">E-mail:</label>
           <input
             type="email"
@@ -119,22 +119,23 @@
         method="POST"
         onsubmit ="onSubmit()"
       >
-        <div class="form-field_1">
+        <div class="form-field">
           Do you love cats?
-
           <input
             type="radio"
-            name="cars queshion"
+            name="cats queshion"
+            id="cats_y"
             value="y"
           >
-          Yes
+          <label for="cats_y">Yes</label>
 
           <input
             type="radio"
-            name="cars queshion"
+            name="cats queshion"
+            id="cats_n"
             value="n"
           >
-          No
+          <label for="cats_n">No</label>
         </div>
 
         <div class="form-field">
@@ -186,7 +187,7 @@
         method="POST"
         onsubmit ="onSubmit()"
       >
-        <div class="form-field_1">
+        <div class="form-field">
           Comments:
 
           <textarea
